@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureVision Pro — AI-Powered Remote Video Surveillance | Canada & Dubai</title>
+  <meta name="description"
+    content="SecureVision Pro provides 24/7 AI-powered remote video surveillance and monitoring services for businesses across Canada and Dubai. Protect your assets with cutting-edge security technology.">
+  <meta name="keywords"
+    content="remote video surveillance, AI security cameras, CCTV monitoring, Canada surveillance, Dubai security, construction site security, remote monitoring services, live video monitoring">
+  <meta name="robots" content="index, follow">
+
+  <!-- OG Tags -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="SecureVision Pro — AI-Powered Remote Video Surveillance">
+  <meta property="og:description"
+    content="24/7 AI-powered remote video surveillance for businesses in Canada & Dubai. Trusted by 500+ clients.">
+  <meta property="og:url" content="https://securevisionpro.com/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Background Grid -->
+  <div class="bg-grid"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <div class="logo-icon">🛡️</div>
+        <div class="logo-text">Secure<span>Vision</span></div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#industries">Industries</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-cta">
+        <a href="tel:+14165550199" class="nav-phone">
+          📞 +1 (416) 555-0199
+        </a>
+        <a href="#contact" class="btn btn-primary btn-glow" id="nav-quote-btn">Get Free Quote</a>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-bg.png" alt="Surveillance monitoring control room" width="1920" height="1080">
+    </div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Trusted by 500+ Businesses in Canada & Dubai
+        </div>
+
+        <h1>
+          AI-Powered <span class="gradient-text">Remote Video Surveillance</span> That Never Sleeps
+        </h1>
+
+        <p class="hero-description">
+          Protect your construction sites, warehouses, parking lots, and commercial properties with our 24/7 live
+          monitored security cameras backed by intelligent AI threat detection.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary btn-glow" id="hero-cta-btn">
+            Get a Free Security Assessment →
+          </a>
+          <a href="#how-it-works" class="btn btn-outline" id="hero-learn-btn">
+            See How It Works
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="number" data-target="500">0</div>
+            <div class="label">Sites Protected</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number" data-target="99.9" data-suffix="%" data-decimal="true">0</div>
+            <div class="label">Uptime Guarantee</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number" data-target="30" data-suffix="s">0</div>
+            <div class="label">Avg. Response Time</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-camera-grid">
+          <div class="camera-feed">
+            <canvas id="cctvCanvas1" style="width:100%;height:100%;display:block;"></canvas>
+            <div class="feed-overlay">
+              <div class="feed-label"><span class="live-dot" style="background:#00d4ff;"></span> SAMPLE VIDEO — Construction Site</div>
+            </div>
+          </div>
+          <div class="camera-feed">
+            <canvas id="cctvCanvas2" style="width:100%;height:100%;display:block;"></canvas>
+            <div class="feed-overlay">
+              <div class="feed-label"><span class="live-dot" style="background:#00d4ff;"></span> SAMPLE VIDEO — Parking Lot</div>
+            </div>
+          </div>
+          <div class="camera-feed">
+            <canvas id="cctvCanvas3" style="width:100%;height:100%;display:block;"></canvas>
+            <div class="feed-overlay">
+              <div class="feed-label"><span class="live-dot" style="background:#00d4ff;"></span> SAMPLE VIDEO — Warehouse</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUSTED BY STRIP ===== -->
+  <section class="trusted-strip">
+    <div class="label">Trusted by Industry Leaders Across Canada & UAE</div>
+    <div class="logo-scroll" id="logoScroll">
+      <div class="client-logo">🏗️ BuildCorp Canada</div>
+      <div class="client-logo">🏢 Dubai Properties</div>
+      <div class="client-logo">🚛 TransLogistics</div>
+      <div class="client-logo">⛽ PetroGuard UAE</div>
+      <div class="client-logo">🏥 MediSafe Clinics</div>
+      <div class="client-logo">🏫 EduSecure Schools</div>
+      <div class="client-logo">🏬 MallSafe Group</div>
+      <div class="client-logo">🔧 InfraSecure</div>
+      <!-- Duplicated for infinite scroll -->
+      <div class="client-logo">🏗️ BuildCorp Canada</div>
+      <div class="client-logo">🏢 Dubai Properties</div>
+      <div class="client-logo">🚛 TransLogistics</div>
+      <div class="client-logo">⛽ PetroGuard UAE</div>
+      <div class="client-logo">🏥 MediSafe Clinics</div>
+      <div class="client-logo">🏫 EduSecure Schools</div>
+      <div class="client-logo">🏬 MallSafe Group</div>
+      <div class="client-logo">🔧 InfraSecure</div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <div class="section-label">Our Services</div>
+        <h2 class="section-title">Comprehensive <span class="highlight">Security Solutions</span></h2>
+        <p class="section-subtitle">Enterprise-grade surveillance technology tailored for businesses of every size
+          across Canada and the UAE.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal" id="service-remote-monitoring">
+          <div class="service-icon">📡</div>
+          <h3>24/7 Remote Video Monitoring</h3>
+          <p>Our certified security analysts watch your premises around the clock via high-definition live camera
+            feeds, ensuring immediate response to any security breach.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal" id="service-ai-detection">
+          <div class="service-icon">🤖</div>
+          <h3>AI-Powered Threat Detection</h3>
+          <p>Advanced artificial intelligence algorithms analyze camera feeds in real-time, detecting intruders,
+            unauthorized vehicles, and suspicious behavior instantly.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal" id="service-construction">
+          <div class="service-icon">🏗️</div>
+          <h3>Construction Site Security</h3>
+          <p>Purpose-built surveillance solutions for active construction sites. Prevent theft of materials,
+            equipment, and ensure after-hours site safety.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal" id="service-mobile-unit">
+          <div class="service-icon">🚐</div>
+          <h3>Mobile Surveillance Units</h3>
+          <p>Rapidly deployable, solar-powered camera trailers that can be set up anywhere in minutes. Ideal for
+            temporary job sites and events.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal" id="service-access-control">
+          <div class="service-icon">🔐</div>
+          <h3>Access Control & Verification</h3>
+          <p>Integrated visitor management and access control with license plate recognition, facial verification,
+            and remote gate operation.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card reveal" id="service-cloud">
+          <div class="service-icon">☁️</div>
+          <h3>Cloud Video Storage & Analytics</h3>
+          <p>Securely store all your footage in the cloud with 90-day retention. Access recordings, generate reports,
+            and review incidents anytime from any device.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="how-header reveal">
+        <div class="section-label">How It Works</div>
+        <h2 class="section-title">Protecting Your Property in <span class="highlight">4 Simple Steps</span></h2>
+        <p class="section-subtitle">From consultation to 24/7 protection — we make security effortless.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-number">01</div>
+          <h3>Free Site Assessment</h3>
+          <p>Our security experts evaluate your property, identify vulnerabilities, and design a custom surveillance
+            plan tailored to your needs.</p>
+        </div>
+
+        <div class="step-card reveal">
+          <div class="step-number">02</div>
+          <h3>Professional Installation</h3>
+          <p>Our certified technicians install high-definition cameras, sensors, and networking equipment with
+            minimal disruption to your operations.</p>
+        </div>
+
+        <div class="step-card reveal">
+          <div class="step-number">03</div>
+          <h3>AI + Human Monitoring</h3>
+          <p>Your cameras are connected to our command center where AI algorithms and trained analysts monitor feeds
+            24/7/365 for any threats.</p>
+        </div>
+
+        <div class="step-card reveal">
+          <div class="step-number">04</div>
+          <h3>Instant Alert & Response</h3>
+          <p>When a threat is detected, we trigger audio warnings, contact law enforcement, and alert you — all
+            within 30 seconds of detection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INDUSTRIES ===== -->
+  <section class="industries" id="industries">
+    <div class="container">
+      <div class="industries-header reveal">
+        <div class="section-label">Industries We Serve</div>
+        <h2 class="section-title">Tailored Security for <span class="highlight">Every Industry</span></h2>
+        <p class="section-subtitle">From construction sites to luxury retail — we protect what matters most.</p>
+      </div>
+
+      <div class="industries-grid">
+        <div class="industry-card reveal" id="industry-construction">
+          <div class="industry-icon">🏗️</div>
+          <h4>Construction Sites</h4>
+          <p>Prevent theft of equipment, materials & tools</p>
+        </div>
+
+        <div class="industry-card reveal" id="industry-parking">
+          <div class="industry-icon">🅿️</div>
+          <h4>Parking Lots</h4>
+          <p>24/7 vehicle & pedestrian monitoring</p>
+        </div>
+
+        <div class="industry-card reveal" id="industry-warehouse">
+          <div class="industry-icon">🏭</div>
+          <h4>Warehouses</h4>
+          <p>Inventory protection & access control</p>
+        </div>
+
+        <div class="industry-card reveal" id="industry-retail">
+          <div class="industry-icon">🏬</div>
+          <h4>Retail & Malls</h4>
+          <p>Shoplifting prevention & crowd management</p>
+        </div>
+
+        <div class="industry-card reveal" id="industry-oil">
+          <div class="industry-icon">⛽</div>
+          <h4>Oil & Gas Sites</h4>
+          <p>Perimeter security for remote locations</p>
+        </div>
+
+        <div class="industry-card reveal" id="industry-school">
+          <div class="industry-icon">🏫</div>
+          <h4>Schools & Campuses</h4>
+          <p>Student safety & campus perimeter defense</p>
+        </div>
+
+        <div class="industry-card reveal" id="industry-auto">
+          <div class="industry-icon">🚗</div>
+          <h4>Auto Dealerships</h4>
+          <p>Vehicle lot protection & vandalism prevention</p>
+        </div>
+
+        <div class="industry-card reveal" id="industry-logistics">
+          <div class="industry-icon">🚛</div>
+          <h4>Logistics & Yards</h4>
+          <p>Cargo security & fleet monitoring</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="why-content reveal-left">
+        <div class="section-label">Why SecureVision Pro</div>
+        <h2 class="section-title">Replace Security Guards with <span class="highlight">Smarter Protection</span>
+        </h2>
+        <p class="section-subtitle">Our AI-powered remote surveillance costs up to 70% less than traditional
+          security guards while providing superior 24/7 coverage.</p>
+
+        <div class="why-features">
+          <div class="why-feature">
+            <div class="why-feature-icon">⚡</div>
+            <h4>30-Second Response</h4>
+            <p>Average response time from detection to action</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">💰</div>
+            <h4>70% Cost Savings</h4>
+            <p>vs. traditional security guards</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">🔒</div>
+            <h4>99.9% Uptime</h4>
+            <p>With redundant systems & backup power</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">📱</div>
+            <h4>Mobile App Access</h4>
+            <p>View live feeds & reports anytime, anywhere</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-visual reveal-right">
+        <div class="why-image-wrapper">
+          <img src="images/hero-bg.png" alt="SecureVision Pro monitoring command center" width="600" height="450">
+        </div>
+        <div class="floating-stat">
+          <div class="stat-icon">🛡️</div>
+          <div class="stat-info">
+            <div class="stat-number">500+</div>
+            <div class="stat-text">Sites Protected</div>
+          </div>
+        </div>
+        <div class="floating-stat">
+          <div class="stat-icon">⏱️</div>
+          <div class="stat-info">
+            <div class="stat-number">< 30s</div>
+            <div class="stat-text">Response Time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COVERAGE / REGIONS ===== -->
+  <section class="coverage" id="coverage">
+    <div class="container">
+      <div class="coverage-header reveal">
+        <div class="section-label">Service Coverage</div>
+        <h2 class="section-title">Serving Clients Across <span class="highlight">Canada & Dubai</span></h2>
+        <p class="section-subtitle">With operations in North America and the Middle East, we deliver world-class
+          security wherever you need it.</p>
+      </div>
+
+      <div class="coverage-grid">
+        <div class="region-card reveal-left" id="region-canada">
+          <div class="region-flag">🇨🇦</div>
+          <h3>Canada</h3>
+          <p class="region-desc">Comprehensive coverage across all major Canadian provinces. From Toronto's
+            bustling construction sites to Vancouver's commercial properties and Alberta's oil fields — we protect
+            Canadian businesses coast to coast.</p>
+          <div class="region-features">
+            <span class="region-feature-tag">Ontario</span>
+            <span class="region-feature-tag">British Columbia</span>
+            <span class="region-feature-tag">Alberta</span>
+            <span class="region-feature-tag">Quebec</span>
+            <span class="region-feature-tag">Manitoba</span>
+            <span class="region-feature-tag">Saskatchewan</span>
+            <span class="region-feature-tag">24/7 Local Support</span>
+          </div>
+        </div>
+
+        <div class="region-card reveal-right" id="region-dubai">
+          <div class="region-flag">🇦🇪</div>
+          <h3>Dubai & UAE</h3>
+          <p class="region-desc">Premium surveillance solutions for Dubai's world-class developments, free zone
+            warehouses, luxury retail centers, and mega-construction projects. Fully compliant with UAE security
+            regulations.</p>
+          <div class="region-features">
+            <span class="region-feature-tag">Dubai</span>
+            <span class="region-feature-tag">Abu Dhabi</span>
+            <span class="region-feature-tag">Sharjah</span>
+            <span class="region-feature-tag">Free Zones</span>
+            <span class="region-feature-tag">Mega Projects</span>
+            <span class="region-feature-tag">Arabic Support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <div class="section-label">Client Testimonials</div>
+        <h2 class="section-title">What Our <span class="highlight">Clients Say</span></h2>
+        <p class="section-subtitle">Don't just take our word for it — hear from businesses we've helped protect.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal" id="testimonial-1">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">SecureVision Pro has completely transformed our construction site security. We
+            used to lose thousands in stolen materials every month. Since installing their AI cameras, theft has
+            dropped to zero.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div class="testimonial-info">
+              <div class="author-name">Michael Roberts</div>
+              <div class="author-role">VP Operations, BuildCorp Canada — Toronto</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal" id="testimonial-2">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">The response time is incredible. Within seconds of an unauthorized person
+            entering our warehouse, the security team was on the intercom warning them. Far better than any guard
+            service we've used.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AH</div>
+            <div class="testimonial-info">
+              <div class="author-name">Ahmed Al-Hassan</div>
+              <div class="author-role">Facility Manager, Dubai LogiPark — Dubai</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal" id="testimonial-3">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">We saved over $180,000 per year by switching from on-site guards to
+            SecureVision Pro's remote monitoring. The coverage is actually better — their cameras see everything,
+            24/7.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SL</div>
+            <div class="testimonial-info">
+              <div class="author-name">Sarah Lin</div>
+              <div class="author-role">COO, Pacific Auto Group — Vancouver</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing-header reveal">
+        <div class="section-label">Pricing Plans</div>
+        <h2 class="section-title">Transparent <span class="highlight">Pricing</span> for Every Budget</h2>
+        <p class="section-subtitle">No hidden fees. No long-term contracts. Cancel anytime. All plans include
+          professional installation.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card reveal" id="plan-starter">
+          <h3>Starter</h3>
+          <div class="price">$299<span>/mo</span></div>
+          <div class="price-desc">Per site • Up to 4 cameras</div>
+          <ul class="pricing-features">
+            <li>4 HD Security Cameras</li>
+            <li>24/7 Remote Monitoring</li>
+            <li>AI Motion Detection</li>
+            <li>30-Day Cloud Storage</li>
+            <li>Mobile App Access</li>
+            <li>Email Alerts & Reports</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" id="plan-starter-btn">Get Started</a>
+        </div>
+
+        <div class="pricing-card featured reveal" id="plan-professional">
+          <div class="pricing-badge">Most Popular</div>
+          <h3>Professional</h3>
+          <div class="price">$599<span>/mo</span></div>
+          <div class="price-desc">Per site • Up to 12 cameras</div>
+          <ul class="pricing-features">
+            <li>12 HD/4K Cameras</li>
+            <li>24/7 Live Monitoring + AI</li>
+            <li>Audio Talk-Down Deterrent</li>
+            <li>90-Day Cloud Storage</li>
+            <li>License Plate Recognition</li>
+            <li>Dedicated Account Manager</li>
+            <li>Priority 15-Second Response</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-glow" id="plan-pro-btn">Get Started</a>
+        </div>
+
+        <div class="pricing-card reveal" id="plan-enterprise">
+          <h3>Enterprise</h3>
+          <div class="price">Custom</div>
+          <div class="price-desc">Unlimited cameras • Multi-site</div>
+          <ul class="pricing-features">
+            <li>Unlimited Cameras</li>
+            <li>Multi-Site Dashboard</li>
+            <li>Custom AI Analytics</li>
+            <li>1-Year Cloud Retention</li>
+            <li>Facial Recognition</li>
+            <li>API Integration</li>
+            <li>SLA Guarantee</li>
+            <li>On-Site Support Team</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" id="plan-enterprise-btn">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-header reveal">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal" id="faq-1">
+          <div class="faq-question">
+            How does remote video monitoring work?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Our system uses high-definition cameras installed at your property, connected to our 24/7 monitoring
+              command center via encrypted internet connections. AI algorithms continuously analyze the footage for
+              suspicious activity. When a potential threat is detected, our trained security analysts are immediately
+              alerted and can take action — including activating audio warnings, contacting law enforcement, and
+              notifying you — all within 30 seconds.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" id="faq-2">
+          <div class="faq-question">
+            How much can I save compared to security guards?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>On average, businesses save 60-70% on security costs by switching from traditional guard services to
+              our remote monitoring solution. A typical security guard costs $25-$40/hour, meaning a single guard
+              for 24/7 coverage costs $18,000-$29,000/month. Our Professional plan covers the same area with
+              superior technology for just $599/month.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" id="faq-3">
+          <div class="faq-question">
+            Do you provide service in both Canada and Dubai?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! We have operations in major Canadian provinces (Ontario, BC, Alberta, Quebec, and more) and
+              across the UAE (Dubai, Abu Dhabi, Sharjah). Our Dubai operations are fully compliant with local
+              security regulations, and we provide Arabic-speaking support for our UAE clients.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" id="faq-4">
+          <div class="faq-question">
+            What happens when an intrusion is detected?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>When our AI or monitoring team detects an unauthorized person or activity: (1) A live audio
+              warning is broadcast through on-site speakers, (2) Local law enforcement or security patrol is
+              dispatched immediately, (3) You receive a real-time push notification with video clip, and (4) A
+              detailed incident report is generated and shared with you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" id="faq-5">
+          <div class="faq-question">
+            Can I view my cameras remotely?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. All our plans include our mobile app (iOS & Android) and web dashboard access. You can
+              view live camera feeds, review recorded footage, generate reports, and manage alerts from anywhere in
+              the world at any time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" id="faq-6">
+          <div class="faq-question">
+            Is there a long-term contract?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. We offer flexible month-to-month plans with no long-term commitments. We believe in earning your
+              business through excellent service, not locking you into contracts. You can upgrade, downgrade, or
+              cancel at any time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2 class="section-title">Ready to Secure Your <span class="highlight">Property Today?</span></h2>
+        <p class="section-subtitle">Get a free, no-obligation security assessment from our experts. We'll design a
+          custom surveillance plan tailored to your needs.</p>
+
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary btn-glow" id="cta-quote-btn">
+            Request Free Quote →
+          </a>
+          <a href="tel:+14165550199" class="btn btn-outline" id="cta-call-btn">
+            📞 Call Us Now
+          </a>
+        </div>
+
+        <div class="cta-contact-info">
+          <div class="cta-contact-item">
+            <span class="icon">🇨🇦</span>
+            <span>Canada: +1 (416) 555-0199</span>
+          </div>
+          <div class="cta-contact-item">
+            <span class="icon">🇦🇪</span>
+            <span>Dubai: +971 4 555 9900</span>
+          </div>
+          <div class="cta-contact-item">
+            <span class="icon">📧</span>
+            <span>info@securevisionpro.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-info reveal-left">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Let's Discuss Your <span class="highlight">Security Needs</span></h2>
+        <p class="section-subtitle">Our security consultants are ready to help you design the perfect surveillance
+          solution for your business.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div>
+              <h4>Canada Head Office</h4>
+              <p>150 King Street West, Suite 2600<br>Toronto, ON M5H 1J9, Canada</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div>
+              <h4>Dubai Regional Office</h4>
+              <p>Business Bay, Prism Tower, Level 22<br>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div>
+              <h4>Phone Numbers</h4>
+              <p>Canada: +1 (416) 555-0199<br>Dubai: +971 4 555 9900</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p>info@securevisionpro.com<br>support@securevisionpro.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook" id="social-fb">📘</a>
+          <a href="#" class="social-link" aria-label="LinkedIn" id="social-li">💼</a>
+          <a href="#" class="social-link" aria-label="Instagram" id="social-ig">📸</a>
+          <a href="#" class="social-link" aria-label="YouTube" id="social-yt">🎬</a>
+          <a href="#" class="social-link" aria-label="Twitter" id="social-tw">🐦</a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper reveal-right">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (416) 555-0199" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Your Company Inc.">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="region">Region *</label>
+              <select id="region" name="region" required>
+                <option value="">Select Region</option>
+                <option value="canada-ontario">Canada — Ontario</option>
+                <option value="canada-bc">Canada — British Columbia</option>
+                <option value="canada-alberta">Canada — Alberta</option>
+                <option value="canada-quebec">Canada — Quebec</option>
+                <option value="canada-other">Canada — Other</option>
+                <option value="uae-dubai">UAE — Dubai</option>
+                <option value="uae-abudhabi">UAE — Abu Dhabi</option>
+                <option value="uae-sharjah">UAE — Sharjah</option>
+                <option value="uae-other">UAE — Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select Service</option>
+                <option value="remote-monitoring">24/7 Remote Monitoring</option>
+                <option value="ai-detection">AI Threat Detection</option>
+                <option value="construction">Construction Security</option>
+                <option value="mobile-units">Mobile Surveillance Units</option>
+                <option value="access-control">Access Control</option>
+                <option value="cloud-storage">Cloud Storage & Analytics</option>
+                <option value="full-solution">Full Security Solution</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell us about your security needs</label>
+            <textarea id="message" name="message" rows="4"
+              placeholder="Describe your property, current security setup, and what you're looking for..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-glow" id="form-submit-btn">
+            Submit Request →
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">🛡️</div>
+            <div class="logo-text">Secure<span>Vision</span></div>
+          </a>
+          <p>AI-powered remote video surveillance protecting businesses across Canada and Dubai. 24/7 monitoring,
+            instant response, and enterprise-grade security at a fraction of the cost.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="YouTube">🎬</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Remote Monitoring</a></li>
+            <li><a href="#services">AI Threat Detection</a></li>
+            <li><a href="#services">Construction Security</a></li>
+            <li><a href="#services">Mobile Units</a></li>
+            <li><a href="#services">Access Control</a></li>
+            <li><a href="#services">Cloud Storage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="#industries">Construction</a></li>
+            <li><a href="#industries">Parking Lots</a></li>
+            <li><a href="#industries">Warehouses</a></li>
+            <li><a href="#industries">Retail & Malls</a></li>
+            <li><a href="#industries">Oil & Gas</a></li>
+            <li><a href="#industries">Auto Dealers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#hero">About Us</a></li>
+            <li><a href="#coverage">Service Areas</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SecureVision Pro. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+      <div class="footer-credit" style="text-align:center;padding-top:20px;border-top:1px solid rgba(0,212,255,0.1);margin-top:20px;">
+        <p style="font-size:0.82rem;color:var(--text-muted);">Designed & Maintained by <a href="https://websire.in" target="_blank" rel="noopener noreferrer" style="color:var(--primary);font-weight:600;transition:opacity 0.3s;">WebSire.in</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ===== NAVBAR SCROLL EFFECT =====
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ===== HAMBURGER MENU =====
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // ===== SCROLL REVEAL ANIMATIONS =====
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Stagger animations for sibling elements
+          const siblings = entry.target.parentElement.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+          const siblingIndex = Array.from(siblings).indexOf(entry.target);
+          entry.target.style.transitionDelay = `${siblingIndex * 0.1}s`;
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ===== COUNTER ANIMATION =====
+    const counterElements = document.querySelectorAll('.hero-stat .number');
+
+    const animateCounter = (el) => {
+      const target = parseFloat(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      const isDecimal = el.dataset.decimal === 'true';
+      const duration = 2000;
+      const startTime = performance.now();
+
+      const updateCounter = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        // Ease out cubic
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = eased * target;
+
+        if (isDecimal) {
+          el.textContent = current.toFixed(1) + suffix;
+        } else {
+          el.textContent = Math.floor(current) + (suffix ? suffix : '+');
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        }
+      };
+
+      requestAnimationFrame(updateCounter);
+    };
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counterElements.forEach(el => counterObserver.observe(el));
+
+    // ===== FAQ ACCORDION =====
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const isActive = item.classList.contains('active');
+
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(faq => faq.classList.remove('active'));
+
+        // Open clicked (if it wasn't already open)
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // ===== SCROLL TO TOP =====
+    const scrollTopBtn = document.getElementById('scrollTop');
+
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 500);
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ===== SMOOTH SCROLL FOR NAV LINKS =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        e.preventDefault();
+        const target = document.querySelector(targetId);
+        if (target) {
+          const navHeight = navbar.offsetHeight;
+          const targetPosition = target.offsetTop - navHeight - 20;
+          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ===== CONTACT FORM HANDLER =====
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const btn = document.getElementById('form-submit-btn');
+      const originalText = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.style.opacity = '0.7';
+      btn.disabled = true;
+
+      // Simulate form submission
+      setTimeout(() => {
+        btn.textContent = '✓ Request Submitted!';
+        btn.style.opacity = '1';
+        btn.style.background = 'linear-gradient(135deg, #00ff88, #00cc6a)';
+
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+          this.reset();
+        }, 3000);
+      }, 1500);
+    });
+
+    // ===== PARALLAX-LIKE EFFECT ON HERO ORBS =====
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+
+      document.querySelectorAll('.hero-orb').forEach((orb, i) => {
+        const factor = i === 0 ? 1 : -1;
+        orb.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+      });
+    });
+    // ===== CCTV CANVAS ANIMATION ENGINE =====
+    (function() {
+      const canvases = [
+        { id: 'cctvCanvas1', label: 'CAM-01 CONSTRUCTION SITE', type: 'construction' },
+        { id: 'cctvCanvas2', label: 'CAM-02 PARKING LOT', type: 'parking' },
+        { id: 'cctvCanvas3', label: 'CAM-03 WAREHOUSE', type: 'warehouse' }
+      ];
+
+      function getTimestamp() {
+        const now = new Date();
+        const p = n => String(n).padStart(2, '0');
+        return `${now.getFullYear()}-${p(now.getMonth()+1)}-${p(now.getDate())} ${p(now.getHours())}:${p(now.getMinutes())}:${p(now.getSeconds())}`;
+      }
+
+      function initCanvas(canvasId) {
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return null;
+        const rect = canvas.parentElement.getBoundingClientRect();
+        const dpr = window.devicePixelRatio || 1;
+        canvas.width = rect.width * dpr;
+        canvas.height = rect.height * dpr;
+        const ctx = canvas.getContext('2d');
+        ctx.scale(dpr, dpr);
+        return { canvas, ctx, w: rect.width, h: rect.height };
+      }
+
+      function drawNoise(ctx, w, h) {
+        for (let i = 0; i < 60; i++) {
+          const x = Math.random() * w;
+          const y = Math.random() * h;
+          const a = Math.random() * 0.06;
+          ctx.fillStyle = `rgba(255,255,255,${a})`;
+          ctx.fillRect(x, y, 1, 1);
+        }
+      }
+
+      function drawGrid(ctx, w, h, alpha) {
+        ctx.strokeStyle = `rgba(0,212,255,${alpha || 0.04})`;
+        ctx.lineWidth = 0.5;
+        const step = 20;
+        for (let x = 0; x < w; x += step) {
+          ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+        }
+        for (let y = 0; y < h; y += step) {
+          ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+        }
+      }
+
+      function drawScanLine(ctx, w, h, t) {
+        const y = (t * 0.5) % h;
+        const grad = ctx.createLinearGradient(0, y - 8, 0, y + 8);
+        grad.addColorStop(0, 'rgba(0,212,255,0)');
+        grad.addColorStop(0.5, 'rgba(0,212,255,0.15)');
+        grad.addColorStop(1, 'rgba(0,212,255,0)');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, y - 8, w, 16);
+      }
+
+      function drawHUD(ctx, w, h, label, t) {
+        // Camera label
+        ctx.font = 'bold 9px monospace';
+        ctx.fillStyle = 'rgba(0,212,255,0.9)';
+        ctx.textBaseline = 'top';
+        ctx.fillText(label, 8, 8);
+        // Timestamp
+        ctx.font = '8px monospace';
+        ctx.fillStyle = 'rgba(255,255,255,0.7)';
+        ctx.fillText(getTimestamp(), 8, 22);
+        // REC indicator
+        const blink = Math.sin(t * 3) > 0;
+        if (blink) {
+          ctx.fillStyle = '#ff3b3b';
+          ctx.beginPath();
+          ctx.arc(w - 28, 14, 4, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.font = 'bold 8px monospace';
+        ctx.fillStyle = '#ff3b3b';
+        ctx.fillText('REC', w - 22, 10);
+        // SAMPLE badge
+        ctx.fillStyle = 'rgba(0,212,255,0.15)';
+        ctx.fillRect(w - 72, h - 22, 64, 16);
+        ctx.strokeStyle = 'rgba(0,212,255,0.4)';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(w - 72, h - 22, 64, 16);
+        ctx.font = 'bold 7px monospace';
+        ctx.fillStyle = 'rgba(0,212,255,0.8)';
+        ctx.fillText('SAMPLE VIDEO', w - 70, h - 12);
+        // Corner brackets
+        const c = 'rgba(0,212,255,0.3)';
+        const s = 15;
+        ctx.strokeStyle = c; ctx.lineWidth = 1.5;
+        // top-left
+        ctx.beginPath(); ctx.moveTo(4, s+4); ctx.lineTo(4, 4); ctx.lineTo(s+4, 4); ctx.stroke();
+        // top-right
+        ctx.beginPath(); ctx.moveTo(w-s-4, 4); ctx.lineTo(w-4, 4); ctx.lineTo(w-4, s+4); ctx.stroke();
+        // bottom-left
+        ctx.beginPath(); ctx.moveTo(4, h-s-4); ctx.lineTo(4, h-4); ctx.lineTo(s+4, h-4); ctx.stroke();
+        // bottom-right
+        ctx.beginPath(); ctx.moveTo(w-s-4, h-4); ctx.lineTo(w-4, h-4); ctx.lineTo(w-4, h-s-4); ctx.stroke();
+      }
+
+      function drawDetectionBox(ctx, x, y, w, h, label, t, color) {
+        const pulse = 0.6 + Math.sin(t * 5) * 0.4;
+        ctx.strokeStyle = color || `rgba(0,255,136,${pulse})`;
+        ctx.lineWidth = 2;
+        ctx.strokeRect(x, y, w, h);
+        // Glowing corners
+        const gl = 6;
+        ctx.strokeStyle = color || `rgba(0,255,136,${Math.min(pulse + 0.3, 1)})`;
+        ctx.lineWidth = 2.5;
+        ctx.beginPath(); ctx.moveTo(x, y+gl); ctx.lineTo(x, y); ctx.lineTo(x+gl, y); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(x+w-gl, y); ctx.lineTo(x+w, y); ctx.lineTo(x+w, y+gl); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(x, y+h-gl); ctx.lineTo(x, y+h); ctx.lineTo(x+gl, y+h); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(x+w-gl, y+h); ctx.lineTo(x+w, y+h); ctx.lineTo(x+w, y+h-gl); ctx.stroke();
+        // Label
+        if (label) {
+          ctx.fillStyle = color || `rgba(0,255,136,${pulse})`;
+          const tw = ctx.measureText(label).width;
+          ctx.fillRect(x, y - 14, tw + 10, 13);
+          ctx.font = 'bold 8px monospace';
+          ctx.fillStyle = '#030810';
+          ctx.fillText(label, x + 5, y - 4);
+        }
+      }
+
+      // ===== CONSTRUCTION SCENE =====
+      function drawConstruction(ctx, w, h, t) {
+        // Sky gradient
+        const skyGrad = ctx.createLinearGradient(0, 0, 0, h * 0.55);
+        skyGrad.addColorStop(0, '#060e1a');
+        skyGrad.addColorStop(1, '#0c1a2e');
+        ctx.fillStyle = skyGrad;
+        ctx.fillRect(0, 0, w, h * 0.55);
+        // Ground
+        const gndGrad = ctx.createLinearGradient(0, h * 0.55, 0, h);
+        gndGrad.addColorStop(0, '#111e30');
+        gndGrad.addColorStop(1, '#0a1520');
+        ctx.fillStyle = gndGrad;
+        ctx.fillRect(0, h * 0.55, w, h * 0.45);
+        // Stars
+        ctx.fillStyle = 'rgba(255,255,255,0.3)';
+        [0.1,0.25,0.4,0.6,0.75,0.9].forEach((px,i) => {
+          ctx.fillRect(w*px, 8+i*7, 1.5, 1.5);
+        });
+        // Buildings
+        ctx.fillStyle = '#0f1c2d';
+        ctx.fillRect(w*0.6, h*0.2, w*0.15, h*0.35);
+        // Windows
+        for (let wy = 0; wy < 5; wy++) {
+          for (let wx = 0; wx < 2; wx++) {
+            const lit = Math.random() > 0.4;
+            ctx.fillStyle = lit ? 'rgba(255,200,100,0.25)' : 'rgba(0,0,0,0.3)';
+            ctx.fillRect(w*0.6 + 8 + wx*16, h*0.22 + wy*18, 10, 8);
+          }
+        }
+        ctx.fillStyle = '#0d1826';
+        ctx.fillRect(w*0.78, h*0.3, w*0.12, h*0.25);
+        for (let wy = 0; wy < 3; wy++) {
+          for (let wx = 0; wx < 2; wx++) {
+            ctx.fillStyle = Math.random() > 0.5 ? 'rgba(255,200,100,0.2)' : 'rgba(0,0,0,0.3)';
+            ctx.fillRect(w*0.78 + 6 + wx*14, h*0.32 + wy*18, 8, 7);
+          }
+        }
+        // Crane
+        ctx.strokeStyle = 'rgba(0,212,255,0.3)';
+        ctx.lineWidth = 2;
+        ctx.beginPath(); ctx.moveTo(w*0.25, h*0.55); ctx.lineTo(w*0.25, h*0.08); ctx.stroke();
+        ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.moveTo(w*0.25, h*0.1); ctx.lineTo(w*0.55, h*0.1); ctx.stroke();
+        // Crane cable swinging
+        const cableX = w*0.45 + Math.sin(t * 0.7) * 8;
+        ctx.strokeStyle = 'rgba(0,212,255,0.2)';
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(cableX, h*0.1); ctx.lineTo(cableX, h*0.3); ctx.stroke();
+        ctx.fillStyle = 'rgba(0,212,255,0.15)';
+        ctx.fillRect(cableX - 6, h*0.28, 12, 8);
+        // Fence
+        ctx.strokeStyle = 'rgba(255,255,255,0.1)';
+        ctx.lineWidth = 1;
+        for (let fx = 0; fx < w; fx += 18) {
+          ctx.beginPath(); ctx.moveTo(fx, h*0.55); ctx.lineTo(fx, h*0.5); ctx.stroke();
+        }
+        ctx.beginPath(); ctx.moveTo(0, h*0.52); ctx.lineTo(w, h*0.52); ctx.stroke();
+        // Walking person
+        const personX = (w * 0.15 + t * 20) % (w * 0.5) + w * 0.1;
+        const legSwing = Math.sin(t * 6) * 4;
+        ctx.strokeStyle = '#00ff88';
+        ctx.lineWidth = 2;
+        // Head
+        ctx.beginPath(); ctx.arc(personX, h*0.45, 4, 0, Math.PI*2); ctx.stroke();
+        // Body
+        ctx.beginPath(); ctx.moveTo(personX, h*0.45+4); ctx.lineTo(personX, h*0.45+16); ctx.stroke();
+        // Legs
+        ctx.beginPath(); ctx.moveTo(personX, h*0.45+16); ctx.lineTo(personX-3+legSwing, h*0.55); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(personX, h*0.45+16); ctx.lineTo(personX+3-legSwing, h*0.55); ctx.stroke();
+        // Arms
+        ctx.beginPath(); ctx.moveTo(personX, h*0.45+8); ctx.lineTo(personX-5-legSwing, h*0.45+14); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(personX, h*0.45+8); ctx.lineTo(personX+5+legSwing, h*0.45+14); ctx.stroke();
+        // Detection box around person
+        const show = Math.sin(t * 2) > -0.3;
+        if (show) {
+          drawDetectionBox(ctx, personX-16, h*0.41, 32, h*0.16, 'PERSON 97%', t);
+        }
+        // Safety cone
+        ctx.fillStyle = 'rgba(255,100,50,0.6)';
+        ctx.beginPath();
+        ctx.moveTo(w*0.4, h*0.55); ctx.lineTo(w*0.4+5, h*0.55); ctx.lineTo(w*0.4+2.5, h*0.48);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = 'rgba(255,100,50,0.6)';
+        ctx.beginPath();
+        ctx.moveTo(w*0.52, h*0.55); ctx.lineTo(w*0.52+5, h*0.55); ctx.lineTo(w*0.52+2.5, h*0.48);
+        ctx.closePath(); ctx.fill();
+      }
+
+      // ===== PARKING SCENE =====
+      function drawParking(ctx, w, h, t) {
+        // Background
+        const bg = ctx.createLinearGradient(0, 0, 0, h);
+        bg.addColorStop(0, '#050c18');
+        bg.addColorStop(0.4, '#0a1628');
+        bg.addColorStop(1, '#0d1a2a');
+        ctx.fillStyle = bg;
+        ctx.fillRect(0, 0, w, h);
+        // Parking lines
+        ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+        ctx.lineWidth = 1;
+        for (let i = 0; i < 6; i++) {
+          const lx = w * 0.1 + i * w * 0.16;
+          ctx.beginPath(); ctx.moveTo(lx, h*0.35); ctx.lineTo(lx, h*0.85); ctx.stroke();
+        }
+        ctx.beginPath(); ctx.moveTo(w*0.1, h*0.35); ctx.lineTo(w*0.9, h*0.35); ctx.stroke();
+        // Parked cars (colored boxes with lights)
+        const cars = [
+          { x: 0.15, color: '#1a3050', lightColor: 'rgba(255,80,80,0.4)' },
+          { x: 0.47, color: '#1e2840', lightColor: 'rgba(255,200,50,0.4)' },
+          { x: 0.63, color: '#152535', lightColor: 'rgba(255,100,100,0.3)' }
+        ];
+        cars.forEach(car => {
+          const cx = w * car.x;
+          ctx.fillStyle = car.color;
+          const carW = w * 0.12, carH = h * 0.35;
+          ctx.fillRect(cx, h*0.42, carW, carH);
+          ctx.strokeStyle = 'rgba(0,212,255,0.15)';
+          ctx.lineWidth = 1;
+          ctx.strokeRect(cx, h*0.42, carW, carH);
+          // Tail lights
+          ctx.fillStyle = car.lightColor;
+          ctx.fillRect(cx+2, h*0.42+carH-4, 4, 3);
+          ctx.fillRect(cx+carW-6, h*0.42+carH-4, 4, 3);
+          // Windshield
+          ctx.fillStyle = 'rgba(100,180,255,0.1)';
+          ctx.fillRect(cx+3, h*0.44, carW-6, 8);
+        });
+        // Moving vehicle
+        const mvx = ((t * 30) % (w + 60)) - 30;
+        ctx.fillStyle = '#253d58';
+        ctx.fillRect(mvx, h*0.2, w*0.1, h*0.12);
+        ctx.strokeStyle = 'rgba(0,212,255,0.3)';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(mvx, h*0.2, w*0.1, h*0.12);
+        // Headlights glow
+        ctx.fillStyle = 'rgba(255,255,200,0.15)';
+        ctx.beginPath();
+        ctx.moveTo(mvx + w*0.1, h*0.22);
+        ctx.lineTo(mvx + w*0.1 + 25, h*0.18);
+        ctx.lineTo(mvx + w*0.1 + 25, h*0.32);
+        ctx.lineTo(mvx + w*0.1, h*0.3);
+        ctx.closePath(); ctx.fill();
+        // Detection on moving car
+        if (mvx > w * 0.1 && mvx < w * 0.7) {
+          drawDetectionBox(ctx, mvx-4, h*0.17, w*0.1+8, h*0.18, 'VEHICLE', t, 'rgba(0,170,255,0.8)');
+        }
+        // Lamp posts with glow
+        [0.3, 0.7].forEach(px => {
+          ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+          ctx.lineWidth = 2;
+          ctx.beginPath(); ctx.moveTo(w*px, h*0.9); ctx.lineTo(w*px, h*0.1); ctx.stroke();
+          // Glow
+          const glow = ctx.createRadialGradient(w*px, h*0.1, 0, w*px, h*0.1, 40);
+          glow.addColorStop(0, 'rgba(255,220,150,0.12)');
+          glow.addColorStop(1, 'transparent');
+          ctx.fillStyle = glow;
+          ctx.fillRect(w*px-40, h*0.1-40, 80, 80);
+        });
+      }
+
+      // ===== WAREHOUSE SCENE =====
+      function drawWarehouse(ctx, w, h, t) {
+        // Background
+        const bg = ctx.createLinearGradient(0, 0, 0, h);
+        bg.addColorStop(0, '#080f1c');
+        bg.addColorStop(0.5, '#0c1825');
+        bg.addColorStop(1, '#0a1420');
+        ctx.fillStyle = bg;
+        ctx.fillRect(0, 0, w, h);
+        // Ceiling beams
+        ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+        ctx.lineWidth = 3;
+        for (let i = 0; i < 4; i++) {
+          const bx = w * (0.15 + i * 0.25);
+          ctx.beginPath(); ctx.moveTo(bx, 0); ctx.lineTo(bx, h); ctx.stroke();
+        }
+        // Shelving racks (bright outlines)
+        const racks = [0.05, 0.22, 0.39, 0.56];
+        racks.forEach((rx, i) => {
+          const rackX = w * rx, rackW = w * 0.12, rackH = h * 0.55;
+          ctx.fillStyle = `rgba(15,25,40,${0.7 + i * 0.05})`;
+          ctx.fillRect(rackX, h*0.15, rackW, rackH);
+          ctx.strokeStyle = 'rgba(0,212,255,0.12)';
+          ctx.lineWidth = 1;
+          ctx.strokeRect(rackX, h*0.15, rackW, rackH);
+          // Shelf lines
+          for (let s = 0; s < 4; s++) {
+            const sy = h*0.15 + s * (rackH/4);
+            ctx.strokeStyle = 'rgba(0,212,255,0.08)';
+            ctx.beginPath(); ctx.moveTo(rackX, sy); ctx.lineTo(rackX+rackW, sy); ctx.stroke();
+            // Boxes on shelves
+            ctx.fillStyle = `rgba(30,50,80,0.6)`;
+            const bw = rackW * 0.3;
+            ctx.fillRect(rackX + 4, sy + 4, bw, rackH/4 - 8);
+            ctx.fillRect(rackX + bw + 8, sy + 6, bw * 0.8, rackH/4 - 10);
+          }
+        });
+        // Floor line
+        ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(0, h*0.72); ctx.lineTo(w, h*0.72); ctx.stroke();
+        // Forklift
+        const forkX = w * 0.7 + Math.sin(t * 0.4) * w * 0.15;
+        ctx.fillStyle = '#1e3350';
+        ctx.fillRect(forkX, h*0.55, 28, 20);
+        ctx.fillStyle = '#253d58';
+        ctx.fillRect(forkX - 8, h*0.5, 8, 25);
+        // Forklift wheels
+        ctx.fillStyle = 'rgba(255,255,255,0.15)';
+        ctx.beginPath(); ctx.arc(forkX + 5, h*0.75+2, 3, 0, Math.PI*2); ctx.fill();
+        ctx.beginPath(); ctx.arc(forkX + 23, h*0.75+2, 3, 0, Math.PI*2); ctx.fill();
+        // Detection box
+        drawDetectionBox(ctx, forkX-14, h*0.45, 50, h*0.34, 'FORKLIFT', t, 'rgba(255,200,0,0.8)');
+        // Worker near racks
+        const workerX = w * 0.35;
+        const workerBob = Math.sin(t * 3) * 2;
+        ctx.strokeStyle = '#00ff88';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(workerX, h*0.6 + workerBob, 3, 0, Math.PI*2); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(workerX, h*0.6+3+workerBob); ctx.lineTo(workerX, h*0.6+12+workerBob); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(workerX, h*0.6+12+workerBob); ctx.lineTo(workerX-3, h*0.72); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(workerX, h*0.6+12+workerBob); ctx.lineTo(workerX+3, h*0.72); ctx.stroke();
+        // Arms picking
+        const armAngle = Math.sin(t * 2) * 5;
+        ctx.beginPath(); ctx.moveTo(workerX, h*0.6+6+workerBob); ctx.lineTo(workerX-6+armAngle, h*0.6+3+workerBob); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(workerX, h*0.6+6+workerBob); ctx.lineTo(workerX+6-armAngle, h*0.6+10+workerBob); ctx.stroke();
+        // Worker detection
+        const showWorker = Math.sin(t * 1.5) > -0.5;
+        if (showWorker) {
+          drawDetectionBox(ctx, workerX-10, h*0.55, 20, h*0.2, 'WORKER', t);
+        }
+        // Overhead lights
+        [0.2, 0.5, 0.8].forEach(lx => {
+          const flicker = 0.08 + Math.sin(t * 2 + lx * 10) * 0.03;
+          const glow = ctx.createRadialGradient(w*lx, 5, 0, w*lx, 5, 50);
+          glow.addColorStop(0, `rgba(200,220,255,${flicker})`);
+          glow.addColorStop(1, 'transparent');
+          ctx.fillStyle = glow;
+          ctx.fillRect(w*lx-50, 0, 100, 60);
+        });
+      }
+
+      // ===== MAIN RENDER LOOP =====
+      const scenes = { construction: drawConstruction, parking: drawParking, warehouse: drawWarehouse };
+      let startTime = performance.now();
+
+      function renderAll() {
+        const now = performance.now();
+        const t = (now - startTime) / 1000;
+
+        canvases.forEach(cfg => {
+          const setup = initCanvas(cfg.id);
+          if (!setup) return;
+          const { ctx, w, h } = setup;
+
+          ctx.clearRect(0, 0, w, h);
+          // Draw scene
+          scenes[cfg.type](ctx, w, h, t);
+          // Overlays
+          drawGrid(ctx, w, h);
+          drawNoise(ctx, w, h);
+          drawScanLine(ctx, w, h, t * 60);
+          drawHUD(ctx, w, h, cfg.label, t);
+        });
+
+        requestAnimationFrame(renderAll);
+      }
+
+      // Start after a small delay to ensure canvases are sized
+      setTimeout(() => {
+        renderAll();
+      }, 100);
+
+      // Resize handler
+      window.addEventListener('resize', () => {
+        canvases.forEach(cfg => initCanvas(cfg.id));
+      });
+    })();
+  </script>
+</body>
+
+</html>
